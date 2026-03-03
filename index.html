@@ -1,0 +1,91 @@
+Put your HTML text here<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CA2 — Codespaces Mini Page</title>
+
+    <style>
+      :root {
+        --text: #1f2328;
+        --muted: #57606a;
+        --border: #d0d7de;
+        --bg: #ffffff;
+        --chip: #f6f8fa;
+      }
+
+      body {
+        margin: 2rem;
+        max-width: 900px;
+        font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.45;
+      }
+
+      h1 { margin: 0 0 0.25rem 0; }
+      p  { margin: 0.5rem 0; }
+
+      .muted { color: var(--muted); }
+
+      .card {
+        margin-top: 1rem;
+        padding: 1rem 1.25rem;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+      }
+
+      .row { margin: 0.35rem 0; }
+
+      .k {
+        display: inline-block;
+        min-width: 9rem;
+        color: var(--muted);
+      }
+
+      .v {
+        display: inline-block;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+        background: var(--chip);
+        padding: 0.15rem 0.4rem;
+        border-radius: 6px;
+      }
+
+      hr { border: 0; border-top: 1px solid var(--border); margin: 0.9rem 0; }
+
+      footer {
+        margin-top: 1.25rem;
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>CA2 — Codespaces Mini Page</h1>
+      <p class="muted">
+        Replace the placeholders below, serve this page from a Codespace, then commit + push.
+      </p>
+    </header>
+
+    <main class="card">
+      <div class="row"><span class="k">Student ID</span> <span class="v">STUDENT_ID_HERE</span></div>
+      <div class="row"><span class="k">Class code</span> <span class="v">CLASS_CODE_HERE</span></div>
+
+      <hr />
+
+      <p><strong>Quick check:</strong> if you can open this page in a normal browser tab via a forwarded URL, your server is running.</p>
+
+      <p class="muted">
+        During your demo, edit the sentence below, save, refresh the browser, and confirm the change appears.
+      </p>
+
+      <p class="v">Change this sentence during the demo.</p>
+    </main>
+
+    <footer>
+      Tip: edits in Codespaces only appear on GitHub after you <strong>commit</strong> and <strong>push</strong>.
+    </footer>
+  </body>
+</html>
